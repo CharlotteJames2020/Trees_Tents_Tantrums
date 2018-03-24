@@ -75,8 +75,7 @@ ul {
 
 .img-fluid {
     width: 100%;
-    max-height: 370px;
-    max
+    max-height: auto;
 }
 
 /*===============================
@@ -101,6 +100,13 @@ ul {
     height: auto;
     padding-right: 30px;
 }
+
+/*
+.container,
+.carousel-inner {
+    display: flex;
+    height: auto;
+}*/
 
 
 /*=================================
@@ -140,6 +146,54 @@ a.social {
     color: black;
     padding: 15px;
 }
+
+/*=================================
+    Image Slider
+===================================*/
+
+    div#carouselExampleIndicators {
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: center;
+        margin-top: 40px;
+    
+    }
+
+    .carousel-control-next-icon {
+        left: 0;    
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: rgb(109, 106, 102);
+        border-color: #ffb600;
+        border-style: groove;
+        padding: 15px;
+        border-radius: 30%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon:hover {
+        background-color: black;
+    }
+ 
+    .carousel-item img {
+        padding: 0;
+    }
+
+
+     /* .carousel-inner > .carousel.item > img {
+        margin: 0 auto;
+      }*/
+
+
+    .carousel-item {
+            padding: 0; 
+    }
+
+
 
 
 
