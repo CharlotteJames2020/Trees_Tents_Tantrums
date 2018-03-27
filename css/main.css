@@ -4,7 +4,7 @@
 body {
     margin-top: 0;
     padding: 10px 0 0;
-    background-color: rgb(222, 241, 228);
+    background-color:  #C1E1A6;
     margin-bottom: 0;
 }
 
@@ -23,7 +23,7 @@ header {
 .main-nav
 a {
     text-decoration: none;
-    color:rgb(126, 204, 144);
+    color: rgb(235, 181, 94);
     padding: 5px;
     font-size: 1.5em;
     font-weight: 500;
@@ -34,13 +34,33 @@ li {
     margin-bottom: 20px;
 }
 
-#site-title{
-    display: inline-block;
-    padding-left: 10px;
-    font-size: 2.3em;
-    width: 44%;
-    color: rgb(10, 77, 32);
-}
+/*===============================
+  ABOUT PARAGRAPH 
+===============================*/
+
+
+.container, img p {
+background: #fff;
+border: 1px solid #ddd;
+font-size: 16px;
+font-size: 1rem;
+vertical-align: top;
+box-shadow: 0 0 5px #ddd;
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+padding: 50px;
+ }
+
+ .changeWordColor {
+     color: #ffb700da;
+ }
+
+
+
+
+
+ 
 
 /*----MAIN NAV-----------*/
 .main-nav {
@@ -75,7 +95,7 @@ ul {
 
 .img-fluid {
     width: 100%;
-    max-height: auto;
+    max-height: 475px;
 }
 
 /*===============================
@@ -90,23 +110,14 @@ ul {
 
 .container img,
 #group_img {
-    width:  50%;
+    width: 50%;
     height: auto;
     padding-left: 30px;
 }
-.container img,
-#katahdin {
-    width:  50%;
-    height: auto;
-    padding-right: 30px;
-}
 
-/*
-.container,
-.carousel-inner {
-    display: flex;
-    height: auto;
-}*/
+#aboutTrail{
+    margin-left: 30px;
+}
 
 
 /*=================================
@@ -147,56 +158,6 @@ a.social {
     padding: 15px;
 }
 
-/*=================================
-    Image Slider
-===================================*/
-
-    div#carouselExampleIndicators {
-        margin-left: 10%;
-        margin-right: 10%;
-        text-align: center;
-        margin-top: 40px;
-    
-    }
-
-    .carousel-control-next-icon {
-        left: 0;    
-    }
-
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-        background-color: rgb(109, 106, 102);
-        border-color: #ffb600;
-        border-style: groove;
-        padding: 15px;
-        border-radius: 30%;
-        margin: 0;
-        text-align: center;
-    }
-
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon:hover {
-        background-color: black;
-    }
- 
-    .carousel-item img {
-        padding: 0;
-    }
-
-
-     /* .carousel-inner > .carousel.item > img {
-        margin: 0 auto;
-      }*/
-
-
-    .carousel-item {
-            padding: 0; 
-    }
-
-
-
-
-
 
 /*=================================
     MEDIA QUERIES
@@ -210,13 +171,19 @@ a.social {
         text-align: center;
     }
 
-    .main-header {
+    /* .main-header {
         flex-direction: column;
         align-items: center;
-    }
+    } */
 
     #site-title {
         font-size: 2em;
+    }
+}
+@media (min-width: 1226px) {
+    .container {
+        flex-direction: column;
+
     }
 }
 
@@ -241,4 +208,14 @@ a.social {
         align-content: flex-start;
     }
 
+}
+
+@media (max-width: 570px) {
+    
+    .container {
+       margin-top: 0; 
+       border: none;
+       box-shadow: none;
+    }
+    
 }

@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/modal.css">
     <title>Trees Tents & Tantrums</title>
 </head>
 <body>
@@ -21,10 +22,7 @@
                       <a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="gallery.html">Slide Show</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#follow">Follow Us</a>
+                      <a class="nav-link" href="gallery.html">Gallery</a>
                     </li>
                   </ul>
                 </div>
@@ -32,18 +30,37 @@
           </nav>
     </header>
     <div class="container">
-        <img id="group_img" src="img/IMAG2072.jpg">
+        <h3>150+ types of <span class="changeWordColor">TREES</span>, 4 <span class="changeWordColor">TENTS</span>, and 9 <span class="changeWordColor">TANTRUM</span> Prone Thru-Hikers.</h3>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
     </div>
     
    
    
     <div class="container">
-        <img id="katahdin" src="img\IMG_1403.jpg">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+        <img id="group_img" src="img/atcFinish.jpg">
+        <p id="aboutTrail">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+      
+             <!-- MODAL btn -->
+             <!-- Trigger/Open The Modal -->
+        <button id="myBtn">Fun Trail Facts!</button>
+
+        <div id="myModal" class="modal">
+
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <ul id="trailFacts">
+              <li>Total distance of the Appalachian Trail is 2,190 miles.</li>
+              <li>From the Southern terminus to Mt. Katahdin in Baxter State Park Maine, the A.T. travels through 14 different states.</li>
+              <li>The Highest point at 6,643 ft. is Clingmans Dome in Tennessee/North Carolina.</li>
+              <li>The Total elevation gain of hiking the entire A.T. is equivalent to climbing Mt. Everest 16 times.</li>
+              <li>1 in 4 who attempt to thru-hike successfully completes the journey.</li>
+              <li>Hikers usually adopt or are given "trail names" while hiking the Trail. They are often humorous. Examples are "Save The Snails," "Invisible Bear," and "Fire Bolt".</li>
+            </ul>
+          </div>
+        </div>
       </div>
 
-    <script src="js/app.js"></script>
+    <script src="js/modal.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
