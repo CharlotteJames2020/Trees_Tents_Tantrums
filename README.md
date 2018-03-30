@@ -14,7 +14,7 @@ The Classes I created are:
     Changes font of the header
 4) #group_img
 
-5) #aboutTrail
+5) #trail_info
 
 6) .main-footer
 
@@ -22,8 +22,8 @@ The Classes I created are:
 
 8) .colmuns-3
 ```
-## Custom JavaScript Functions
-When the user clicks on the button, it opens the modal.
-    
-    btn.onclick = function() {modal.style.display = "block";}
-
+## Custom JavaScript Functions 
+   1) btn.onclick = function() {modal.style.display = "block";}
+   ```
+   When the user clicks on the button, it opens the modal.
+```
