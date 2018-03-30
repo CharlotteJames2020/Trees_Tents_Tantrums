@@ -23,7 +23,16 @@ The Classes I created are:
 8) .colmuns-3
 ```
 ## Custom JavaScript Functions 
-   1) btn.onclick = function() {modal.style.display = "block";}
-   ```
+1) btn.onclick = function() {modal.style.display = "block";}
    When the user clicks on the button, it opens the modal.
-```
+ 
+2) span.onclick = function() {modal.style.display = "none";}
+   When the user clicks on the (x), it closes the modal.
+
+3) window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";}}
+         This function makes clicking outside of the modal, closes it.
+
+
+
