@@ -106,7 +106,7 @@ a.social {
 ul.rig {
 	list-style: none;
 	font-size: 0px;
-	margin-left: -2.5%; /* should match li left margin */
+	margin-left: -2.5%;
 	margin-right:2.5%;
 	padding-top: 70px;
 }
@@ -138,19 +138,14 @@ ul.rig li p {
 	line-height: 1.5em;
 	color: #999;
 }
-/* class for 2 columns */
- ul.rig.columns-2 li { 
-	width: 47.5%; /* this value + 2.5 should = 50% */
-}
-/* class for 3 columns */
+
+ /* class for 3 columns  */
 ul.rig.columns-3 li {
-	width: 30.83%; /* this value + 2.5 should = 33% */
+	width: 30.83%; 
+	margin-top: 65px;/*this value + 2.5 should = 33%  */
 }
 
-/* class for 4 columns */
-ul.rig.columns-4 li {
-	 width: 22.5%; /*this value + 2.5 should = 25% */
-}
+
 
 /*============================
 		MEDIA QUERIES
@@ -158,8 +153,8 @@ ul.rig.columns-4 li {
 	
 	/*===========================
 	  IMAGE GALLERY	MEDIA QUERIES
-	=============================*/
-@media (max-width: 480px) {
+	/* =============================*/
+@media (max-width: 670px) {
     body{
     margin:0;
 }
@@ -172,46 +167,26 @@ ul.rig.columns-4 li {
 	}
 }
 
-/*============================
-	MAIN CSS MEDIA QUERIES
-============================*/
 
-
-@media (max-width: 769px){
-
-    .main-header,
-    .main-nav  {
-        display: block;
-        text-align: center;
-    }
-
-    .main-header {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #site-title {
-        font-size: 2em;
-    }
+@media (max-width: 900px) {
+	ul.rig.columns-2 li { 
+		width: 47.5%;  /*this value + 2.5 should = 50% */
+	}
+	ul.rig li img {
+		max-height: 350px;
+		width: auto;
+	}
+	 
 }
 
-@media (max-width: 1225px) {
-
-    .main-header {
-        flex-direction: row;
-    }
-
-    .container {
-        flex-direction: column;
-
-    }
-    
-    
-    .container p {
-        align-content: flex-start;
-    }
-
+@media (min-width: 1000px) {
+	ul.rig li img {
+		max-height: 410px;
+		margin: 0 0 10px;
+	}
 }
+ 
+
 
 
 

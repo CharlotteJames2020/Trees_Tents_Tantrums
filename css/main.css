@@ -14,10 +14,6 @@ h1 {
     margin: 0;
     color: whitesmoke;
 }
-header {
-    padding-top: 15px;
-    padding-bottom:  0;
-}
 
 
 .main-nav
@@ -56,27 +52,7 @@ padding: 50px;
      color: #ffb700da;
  }
 
-
-
-
-
- 
-
 /*----MAIN NAV-----------*/
-.main-nav {
-    display: inline-block;
-    width: 50%;
-}
-
-
-.main-nav
-ul {
-    max-width: 100%;
-    text-align: right;
-    top: 0;
-    width: 100%;
-    padding-left: 0;
-}
 
 .navbar-light .navbar-brand,
  .navbar-light .navbar-toggler {
@@ -91,6 +67,9 @@ ul {
     background: no-repeat center;
     background-size: cover;
     width: 100% /9;
+
+    padding-top: 15px;
+    padding-bottom:  0;
 }
 
 .img-fluid {
@@ -108,15 +87,19 @@ ul {
     margin-top: 50px;
 }
 
-.container img,
+
 #group_img {
     width: 50%;
     height: auto;
-    padding-left: 30px;
 }
 
-#aboutTrail{
-    margin-left: 30px;
+#trail_info {
+    margin-top: 15px;
+}
+
+#about_the_AT {
+    font-family: Georgia, serif	;
+    font-size: xx-large;
 }
 
 
@@ -176,10 +159,24 @@ a.social {
         align-items: center;
     } */
 
-    #site-title {
-        font-size: 2em;
-    }
+    
+    #group_img {
+        width: 100%;
+        height: auto;
+        padding-left: 0;
+        align-self: center;
+     }
 }
+
+@media (max-width: 990px){
+    #group_img {
+        width: 100%;
+        height: auto;
+        padding-left: 0;
+        align-self: center;
+     }
+}
+
 @media (min-width: 1226px) {
     .container {
         flex-direction: column;
@@ -197,12 +194,12 @@ a.social {
         flex-direction: column;
 
     }
-    .container img,
+    /* .container img,
     #group_img,
-    #katahdin
+    
      {
         width: 60%;
-    }
+    } */
     
     .container p {
         align-content: flex-start;
