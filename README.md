@@ -13,14 +13,11 @@ The Classes I created are:
 3) .about_the_AT
     Changes font of the header
 4) #group_img
-
+    Width and Height to group image
 5) #trail_info
-
+    Adds margin to the "About the A.T." paragraph
 6) .main-footer
-
-7) .columns-2 
-
-8) .colmuns-3
+    fixes footer to the bottom of the page, sets width to 100%, sets background-color, and margin and padding.
 ```
 ## Custom JavaScript Functions 
 1) btn.onclick = function() {modal.style.display = "block";}
